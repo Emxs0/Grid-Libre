@@ -1,0 +1,58 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333; 
+    text-align: center;
+}
+main {
+    max-width: 1200px; /* Ancho máximo para el contenido principal */
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1 {
+    color:#3498db;
+}
+
+.noticias {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espacio entre las tarjetas de noticias */
+    text-align: left; /* Alinea el texto de las tarjetas a la izquierda */
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card .fecha {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin: 0 0 10px;
+}
+
+.card .titulo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 0 0 10px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+footer a:hover {
+    color: #2980b9; /* Un azul un poco más oscuro al pasar el mouse */
+}
